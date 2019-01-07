@@ -1,0 +1,7 @@
+<form #categoryForm="ngForm" (ngSubmit)="category(categoryForm)" class="col-6">
+  <div class="form-group">
+    <label for="e-mail"><b class="text-success">new category</b></label>
+    <input type="text" class="form-control" id="e-mail" placeholder="category" name="category" ngModel required>
+  </div>
+  <button type="submit" class="btn btn-default login-popup-btn" name="submit" >Add</button>
+</form>

@@ -1,0 +1,24 @@
+<div class="row mt-5">
+  <div class="col-6 text-center">
+    <p>no of red flags raised <span>{{flag}}</span></p>
+    <p>No. of red flags cleared
+      <span>{{cleared}}</span></p>
+
+    <p>No. of answers removed
+      <span>{{removedanswer}}</span></p>
+
+    <p>No. of users blocked
+      <span>{{blockuser}}</span></p>
+
+  </div>
+
+  <div class="col-6">
+    <form #xlform="ngForm" (ngSubmit)="handlesubmit(xlform)">
+      from:
+      <input type="date" name="createat"><br>
+      to:
+      <input type="date" name="createat"><br>
+      <button type="submit">export</button>
+    </form>
+  </div>
+</div>
